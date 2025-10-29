@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | Rock Solid Shutters</title>
+  <meta name="description" content="Thank you for your order. We'll email your receipt and shipping updates soon.">
+  <link rel="canonical" href="https://dmouser86.github.io/Rock-Solid-Shutters-V3/pages/success.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Order Confirmed | Rock Solid Shutters">
+  <meta property="og:description" content="Thank you for your order. We'll email your receipt and shipping updates soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dmouser86.github.io/Rock-Solid-Shutters-V3/pages/success.html">
+  <meta property="og:image" content="https://dmouser86.github.io/Rock-Solid-Shutters-V3/assets/images/hero.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Order Confirmed | Rock Solid Shutters">
+  <meta name="twitter:description" content="Thank you for your order. We'll email your receipt and shipping updates soon.">
+  <meta name="twitter:image" content="https://dmouser86.github.io/Rock-Solid-Shutters-V3/assets/images/hero.webp">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Favicons & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/icon-16x16.png">
+  <link rel="manifest" href="/public/manifest.json">
+  <meta name="theme-color" content="#5b3a29">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Rock Solid Shutters">
+  <meta name="application-name" content="Rock Solid Shutters">
+  <meta name="msapplication-TileColor" content="#5b3a29">
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Rock Solid Shutters", "image": "https://dmouser86.github.io/Rock-Solid-Shutters-V3/assets/icons/icon-192x192.png", "url": "https://dmouser86.github.io/Rock-Solid-Shutters-V3/", "telephone": "+15734144940", "email": "david@semo-rocksolid.org", "address": {"@type": "PostalAddress", "addressLocality": "Advance", "addressRegion": "MO", "addressCountry": "US"}, "description": "Premium handcrafted wooden shutters \u2014 custom and standard sizes with free shipping.", "sameAs": ["https://dmouser86.github.io/Rock-Solid-Shutters-V3/"]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="/index.html">
+      <img src="/assets/images/logo.png" alt="Rock Solid Shutters logo" height="44">
+    </a>
+    <nav>
+      <a href="/pages/shop.html">Shop</a>
+      <a href="/pages/custom.html">Custom Orders</a>
+      <a href="/pages/gallery.html">Gallery</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+      <a class="btn-cart" href="/pages/checkout.html">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+<main class="container" style="margin-top:20px">
+  <h1>Thank you!</h1>
+  <p>Your order was placed successfully.</p>
+  <p>Order ID: <strong id="oid"></strong></p>
+  <p>We’ll email your receipt and shipping updates shortly.</p>
+  <a class="btn" href="/index.html">Back to Home</a>
+</main>
+<script>
+const params = new URLSearchParams(location.search);
+document.getElementById('oid').textContent = params.get('orderId')||'(pending)';
+</script>
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>Rock Solid Shutters — David Throgmorton (Owner/Operator)</strong><br>
+    Phone: (573) 414-4940 • Email: <a href="mailto:david@semo-rocksolid.org">david@semo-rocksolid.org</a><br>
+    Handcrafted in Advance, Missouri</p>
+  </div>
+</footer>
+<script src="/assets/scripts/ui.js"></script>
+
+</body>
+</html>

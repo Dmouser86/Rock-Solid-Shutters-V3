@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dmouser86.github.io/Rock-Solid-Shutters-V3/sitemap.xml
